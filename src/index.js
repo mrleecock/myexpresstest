@@ -16,4 +16,5 @@ app.get("/client", (req, res) => {
   res.sendFile(path.join(__dirname, "client", "client.js"));
 });
 
-app.listen(8080);
+var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080
+app.listen(port);
