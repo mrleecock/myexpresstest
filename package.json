@@ -4,8 +4,7 @@
   "description": "Node.js example server starter project",
   "main": "src/index.js",
   "scripts": {
-    "start": "./node_modules/parcel-bundler/bin/cli.js src/index.js --port 8080",
-    "build": "parcel build src/index.js"
+    "start": "node ./src/index.js",
   },
   "dependencies": {
     "express": "4.17.1"
